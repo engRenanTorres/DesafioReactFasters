@@ -8,7 +8,7 @@ export default function Rodape() {
         <Image className='logo' src="/images/LogoFooter.svg" alt="Renee Trajar Logo" width={139} height={68} />
         <p>CNPJ:04.487.685/0001-01</p>
         <small>Copyright: 2021 &copy; Renee Trajar<br/>Todos os direitos reservados.</small>
-        <a href='#topo'><img className='voltarTopo' src="/images/voltarTopo.svg" alt="Voltar ao topo da página"/></a>
+        <a href='#topo'><img className='voltarTopo' src="/images/simbolos/voltarTopo.svg" alt="Voltar ao topo da página"/></a>
         <style jsx>{`
                 footer{
                     height: 273px;

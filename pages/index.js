@@ -5,6 +5,7 @@ import AbaMenu from '../src/componentes/AbaMenu';
 import FormularioContato from '../src/componentes/FormularioContato';
 import Rodape from '../src/componentes/Rodape';
 import BotaoPadrao from '../src/componentes/BotaoPadrao';
+import CartaoDepoimento from '../src/componentes/CartaoDepoimento';
 
 
 
@@ -24,7 +25,7 @@ export default function Home() {
       </Head>
 
       <header id='topo' className={styles.header}>
-        <button className={styles.iconeMenu} onClick={()=>setAtivaAbaMenu(!ativaAbaMenu)}><img  src="/images/Menu.svg"/></button>
+        <button className={styles.iconeMenu} onClick={()=>setAtivaAbaMenu(!ativaAbaMenu)}><img  src="/images/simbolos/Menu.svg"/></button>
         <img className={styles.logoInicial}src="/images/Logo.svg"/>
       </header>
       <AbaMenu estadoAba={ativaAbaMenu} acaoAba={setAtivaAbaMenu}/>  
@@ -38,6 +39,7 @@ export default function Home() {
         <BotaoPadrao margemTop={46}>FAÇA JÁ UM ORÇAMENTO</BotaoPadrao> 
         
       </main>
+      <CartaoDepoimento/>
       <FormularioContato/>
       <Rodape/>
 

@@ -5,14 +5,14 @@ import styles from '../../styles/Home.module.css';
 export default function AbaMenu({estadoAba,acaoAba}) {
   return (
     <div className={estadoAba?'abaMenuAtiva':'abaMenuDesativa'}>
-        <button className='closeButton' onClick={()=>acaoAba(!estadoAba)}><img   src="/images/CloseIcon.svg"/></button>
+        <button className='closeButton' onClick={()=>acaoAba(!estadoAba)}><img   src="/images/simbolos/CloseIcon.svg"/></button>
         <nav >
             <ul className={styles.abaMenuUl}>
-                <li className='abaMenulink abaMenuAtivo'><a href='#'>Empresa</a></li>
-                <li className='abaMenulink'><a href='#'>Camisaria</a></li>
-                <li className='abaMenulink'><a href='#'>Alfataria</a></li>
-                <li className='abaMenulink'><a href='#'>Depoimentos</a></li>
-                <li className='abaMenulink'><a href='#formContato'>Contato</a></li>
+                <li className='abaMenulink abaMenuAtivo'><a href='#'onClick={()=>acaoAba(!estadoAba)}>Empresa</a></li>
+                <li className='abaMenulink'><a href='#' onClick={()=>acaoAba(!estadoAba)}>Camisaria</a></li>
+                <li className='abaMenulink'><a href='#' onClick={()=>acaoAba(!estadoAba)}>Alfataria</a></li>
+                <li className='abaMenulink'><a href='#Depoimentos' onClick={()=>acaoAba(!estadoAba)}>Depoimentos</a></li>
+                <li className='abaMenulink'><a href='#formContato' onClick={()=>acaoAba(!estadoAba)}>Contato</a></li>
             </ul>
 
         </nav>
@@ -41,11 +41,7 @@ export default function AbaMenu({estadoAba,acaoAba}) {
                     top: -735px;
                     transition: .25s;
                 }
-                ul {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                }
+
                 li{
                     text-align: center;
                     margin-bottom: 43px;

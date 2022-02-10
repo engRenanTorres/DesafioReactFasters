@@ -64,7 +64,7 @@ export default function CartaoDepoimento() {
                     
                     background-image: url("/images/backgroundDepo.png");
                     background-color: var(--azul); 
-                    height: 782px;
+                    min-height: 782px;
                     display:flex;
                     flex-direction: column;
                     align-items:center;

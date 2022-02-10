@@ -8,7 +8,7 @@ export default function AbaMenu({estadoAba,acaoAba}) {
         <button className='closeButton' onClick={()=>acaoAba(!estadoAba)}><img   src="/images/simbolos/CloseIcon.svg"/></button>
         <nav >
             <ul className={styles.abaMenuUl}>
-                <li className='abaMenulink abaMenuAtivo'><a href='#'onClick={()=>acaoAba(!estadoAba)}>Empresa</a></li>
+                <li className='abaMenulink abaMenuAtivo'><a href='#Empresa'onClick={()=>acaoAba(!estadoAba)}>Empresa</a></li>
                 <li className='abaMenulink'><a href='#' onClick={()=>acaoAba(!estadoAba)}>Camisaria</a></li>
                 <li className='abaMenulink'><a href='#' onClick={()=>acaoAba(!estadoAba)}>Alfataria</a></li>
                 <li className='abaMenulink'><a href='#Depoimentos' onClick={()=>acaoAba(!estadoAba)}>Depoimentos</a></li>

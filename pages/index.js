@@ -6,6 +6,7 @@ import FormularioContato from '../src/componentes/FormularioContato';
 import Rodape from '../src/componentes/Rodape';
 import BotaoPadrao from '../src/componentes/BotaoPadrao';
 import CartaoDepoimento from '../src/componentes/CartaoDepoimento';
+import CartaoRenee from '../src/componentes/CartaoRenee';
 
 
 
@@ -39,6 +40,7 @@ export default function Home() {
         <BotaoPadrao margemTop={46}>FAÇA JÁ UM ORÇAMENTO</BotaoPadrao> 
         
       </main>
+      <CartaoRenee/>
       <CartaoDepoimento/>
       <FormularioContato/>
       <Rodape/>

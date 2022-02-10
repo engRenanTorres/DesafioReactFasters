@@ -4,6 +4,7 @@ import { useState } from 'react';
 import AbaMenu from '../src/componentes/AbaMenu';
 import FormularioContato from '../src/componentes/FormularioContato';
 import Rodape from '../src/componentes/Rodape';
+import BotaoPadrao from '../src/componentes/BotaoPadrao';
 
 
 
@@ -19,9 +20,10 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
-      <header className={styles.header}>
+      <header id='topo' className={styles.header}>
         <button className={styles.iconeMenu} onClick={()=>setAtivaAbaMenu(!ativaAbaMenu)}><img  src="/images/Menu.svg"/></button>
         <img className={styles.logoInicial}src="/images/Logo.svg"/>
       </header>
@@ -33,7 +35,7 @@ export default function Home() {
         <p className={styles.tituloFinal}> para chamar de seu. </p>
         <h2 className={styles.chamada}>Compre hoje, pague em até 3x com 12% de desconto e tenha 10 meses para confeccionar!</h2>
         <button className={styles.wtspLink}><img src='/images/wtsp.svg'/></button>
-        <button className={styles.botaoDeChamada}>Faça já um orçamento</button>
+        <BotaoPadrao margemTop={46}>FAÇA JÁ UM ORÇAMENTO</BotaoPadrao> 
         
       </main>
       <FormularioContato/>

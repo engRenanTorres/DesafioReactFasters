@@ -12,15 +12,15 @@ export default function AbaMenu({estadoAba,acaoAba}) {
                 <li className='abaMenulink'><a href='#'>Camisaria</a></li>
                 <li className='abaMenulink'><a href='#'>Alfataria</a></li>
                 <li className='abaMenulink'><a href='#'>Depoimentos</a></li>
-                <li className='abaMenulink'><a href='#'>Contato</a></li>
+                <li className='abaMenulink'><a href='#formContato'>Contato</a></li>
             </ul>
 
         </nav>
         <address>
-            Telefones <br/>
-            <a className='contatoMenu' href='tel:+55 (11) 3088-0757'>+55 (11) 3088-0757</a><br/>
-            E-mail <br/>
-            <a className='contatoMenu' href='malito:renee@reneetrajar.com.br'>renee@reneetrajar.com.br</a>
+            <p>Telefones</p>
+            <p><a className='contatoMenu' href='tel:+55 (11) 3088-0757'>+55 (11) 3088-0757</a></p>
+            <p>E-mail</p>
+            <p><a className='contatoMenu' href='malito:renee@reneetrajar.com.br'>renee@reneetrajar.com.br</a></p>
         </address>
         <style jsx>{`
                 div {
@@ -73,6 +73,7 @@ export default function AbaMenu({estadoAba,acaoAba}) {
                     color: var(--azul2);
                     text-align: center;
                     text-transform: uppercase;
+                    
                 }
                 .contatoMenu{
                     font-family: Lato;
@@ -82,12 +83,15 @@ export default function AbaMenu({estadoAba,acaoAba}) {
                     line-height: 150.1%;
                     text-transform: lowercase;
                     /* identical to box height, or 27px */
-
+                    
                     text-align: center;
 
                     /* Gray 3 */
 
                     color: #828282;
+                }
+                p{
+                    padding-bottom:8px;
                 }
 
 

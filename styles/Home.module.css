@@ -126,12 +126,4 @@
   border-radius: 2px;
 }
 
-.footer{
-  height: 273px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-}
-
 

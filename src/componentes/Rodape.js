@@ -1,16 +1,20 @@
 import React from 'react';
-import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
 
 export default function Rodape() {
   return (
-    <footer className={styles.footer}>
+    <footer>
         <Image className='logo' src="/images/LogoFooter.svg" alt="Renee Trajar Logo" width={139} height={68} />
         <p>CNPJ:04.487.685/0001-01</p>
         <small>Copyright: 2021 &copy; Renee Trajar<br/>Todos os direitos reservados.</small>
         <style jsx>{`
                 footer{
+                    height: 273px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-self: center;
                     border-top: thin solid var(--dourado);
                     margin:2px 23px;
                     padding-top:26px;

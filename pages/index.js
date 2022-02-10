@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import AbaMenu from '../src/componentes/AbaMenu';
 import { useState } from 'react';
+import AbaMenu from '../src/componentes/AbaMenu';
+import FormularioContato from '../src/componentes/FormularioContato';
 import Rodape from '../src/componentes/Rodape';
+
 
 
 export default function Home() {
@@ -33,42 +35,8 @@ export default function Home() {
         <button className={styles.wtspLink}><img src='/images/wtsp.svg'/></button>
         <button className={styles.botaoDeChamada}>Faça já um orçamento</button>
         
-
-       {/*  <p className={styles.description}>
-        Com mais de 35 anos de experiência{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
       </main>
+      <FormularioContato/>
       <Rodape/>
 
     </div>
